@@ -1,16 +1,18 @@
-<h1> Books </h1>
+<h1> Bookstore </h1>
 
 
 <table border = "10" style="width:300px">
 
 <ul>
-<% all_books = Books.read %>
-<% all_books.each do |books| %>
+<% all_books = Bookstore.read %>
+<% all_books.each do |bookstore| %>
 	
 
 	<tr>
-	<td> <%= books["title"] %> </td>
-	<td> <%= books["author"] %> </td>
+	<td> <%= bookstore["title"] %> </td>
+	<td> <%= bookstore["author"] %> </td>
+	<td> <%= bookstore["price"] %> </td>
+	
 	</tr>
 
 
